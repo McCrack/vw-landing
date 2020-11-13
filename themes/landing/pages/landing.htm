@@ -1,0 +1,69 @@
+title = "landing"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[genericForm]
+messages_success = "Ваша форма была успешно отправлена!"
+messages_errors = "В вашей заявке содержатся ошибки."
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+==
+<svg xmlns="http://www.w3.org/2000/svg" class="absolute">
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="90%" y2="0%">
+            <stop offset="0%" stop-color="#2665bd" />
+            <stop offset="100%" stop-color="#ffffff" />
+        </linearGradient>
+    </defs>
+</svg>
+<main class="gray-gradient relative">
+    <div class="logo text-center py-30">
+        <img src="{{ 'assets/images/logo.png'|theme }}" alt="LOGO">
+    </div>
+    
+    {% partial 'cover' %}
+    
+    <div class="container relative pb-40">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="150" 
+             height="150" 
+             viewBox="0 0 100 100" 
+             class="bubble absolute" 
+             style="right: 1%; top: -48px">
+            <circle cx="50" cy="50" r="48" stroke="url(#gradient)" stroke-width="1" fill="none" transform='rotate(120 50 50)'/>
+        </svg>
+        <div class="flex-ls align-stretch justify-evenly p-10 relative z-index-2">
+            <img src="{{ 'assets/images/humans.jpg'|theme }}" alt="Герберт Дисс и Ангела Меркель" class="contain">
+            <div class="px-10"></div>
+            <div class="order-form full-width disabled-bg text-center">
+                {% component 'genericForm' %}
+            </div>
+        </div>
+        <div class="py-20 text-right" style="font-size: 5.5vw">
+            <p class="font-black light-txt">Фольксваген</p>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         width="200" 
+         height="200" 
+         viewBox="0 0 100 100" 
+         class="bubble absolute" 
+         style="right: -100px; bottom: -120px">
+            <circle cx="50" cy="50" r="48" stroke="url(#gradient)" stroke-width="1" fill="none" transform='rotate(120 50 50)'/>
+    </svg>
+</main>
+
+
+<div class="container">
+
+    {% partial 'advantages' %}
+
+    {% partial 'stages' %}
+
+</div>

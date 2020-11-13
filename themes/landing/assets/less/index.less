@@ -1,0 +1,81 @@
+@import "variables";
+@import "fonts";
+@import "theme";
+@import "content";
+@import "responsivity";
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*~~~~~*** MARKUP ***~~~~~*/
+
+
+.text-container {
+    margin: 0 auto;
+}
+
+#cover {
+    min-height: 80vh;
+}
+
+/*~~~~~* COMPONENTS *~~~~~*/
+
+
+.btn {
+    border: none;
+    border-radius: 20px;
+}
+.separator {
+    width: 1px;
+    border: none;
+    min-height: 20px
+}
+
+.label {
+    width: 168px;
+    &:nth-child(1) {
+        border-radius: 0 20px 20px 0;
+    }
+    &:nth-child(2) {
+        border-radius: 20px 0 0 20px;
+    }
+}
+.bubble {
+    z-index: 1;
+}
+
+/*~~~~* FORM CONTROLS *~~~~*/
+
+.order-form {
+    padding: 0 3vw;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.order-form + img {
+    
+    border-radius: 30px;
+}
+.field {
+    height: 40px;
+    margin: 10px 0;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid @primary;
+    input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 0 20px;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+}
+
+
+

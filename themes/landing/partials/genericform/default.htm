@@ -1,0 +1,42 @@
+==
+<form data-request="{{ __SELF__ }}::onFormSubmit" class="full-width full-height box flex-evenly-stretch flex-wrap flex-column">
+    <h2>Форма заявки:</h2>
+    {{ form_token() }}
+
+    <div id="{{ __SELF__ }}_forms_flash"></div>
+
+    <div class="field">
+        <input type="text"
+               name="name"
+                placeholder="Введите имя"
+                required>
+    </div>
+    
+    <div class="field">
+        <input name="lastname"
+               type="text"
+               placeholder="Введите фамилию"
+               required>
+    </div>
+    <div class="field">
+        <input name="email"
+               type="email"
+               placeholder="Введите электронный адрес"
+               required>
+    </div>
+    <div class="field">
+        <input name="phone"
+               type="tel"
+               placeholder="Введите номер телефона"
+               required>
+    </div>
+    <div>
+        {% partial '@recaptcha' %}
+    </div>
+    <div class="my-20">
+        <button type="submit"
+                class="btn primary-gradient py-10 px-20 font-16 font-regular uppercase white-txt">
+            отправить
+        </button>
+    </div>
+</form>
