@@ -1,7 +1,4 @@
 @media (orientation: portrait) {
-    .order-form + img {
-        width: 100%;
-    }
     h1,
     .h1 {
         font-size: 36px;
@@ -15,6 +12,24 @@
             float: right;
         }
     }
+    .back-caption {
+        height: 60px;
+        font-size: 40px;
+        p {
+            top: 0;
+            right: 5px;
+        }
+    }
+    .order-form {
+        img {
+            width: 100%;
+            margin: 10px 0;
+            display: block;
+        }
+        form {
+            width: 100%;
+        }
+    }
 }
 @media (orientation: landscape) {
     .logo {
@@ -22,12 +37,25 @@
         right: 0;
         position: absolute;
     }
-    .order-form {
-        max-width: 450px;
-    }
     h1,
     .h1 {
         font-size: 42px;
+    }
+    .back-caption {
+        height: 140px;
+        font-size: 120px;
+        p {
+            top: -60px;
+            right: -60px;
+        }
+    }
+    .order-form {
+        img{
+            width: 46%;
+        }
+        form {
+            width: 40%;
+        }
     }
 }
 
