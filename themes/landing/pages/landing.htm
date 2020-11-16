@@ -38,14 +38,14 @@ emails_date_format = "Y-m-d"
              style="right: 1%; top: -48px">
             <circle cx="50" cy="50" r="48" stroke="url(#gradient)" stroke-width="1" fill="none" transform='rotate(120 50 50)'/>
         </svg>
-        <div class="order-form flex-ls align-stretch justify-evenly p-10 relative z-index-2">
+        <div id="order-form" class="flex-ls align-stretch justify-evenly p-10 relative z-index-2">
             <img src=""
                  alt="BUGOK"
                  class="contain disabled-bg half-width text-center font-30 font-extralight">
             {% component 'genericForm' %}
         </div>
-        <div class="back-caption ">
-            <p class="font-black disabled-txt uppercase">Фольксваген</p>
+        <div class="back-caption">
+            <p class="font-black uppercase right-5">Фольксваген</p>
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" 
@@ -59,16 +59,9 @@ emails_date_format = "Y-m-d"
 </main>
 
 
-<div class="container">
+{% partial 'advantages' %}
 
-    {% partial 'advantages' %}
-<br>
-<br>
-<br>
-<br><br><br>
-<br><br>
-<br>
-<br>
-    {% partial 'stages' %}
 
-</div>
+{% partial 'stages' %}
+
+{% partial 'reviews' %}

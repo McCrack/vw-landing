@@ -1324,6 +1324,27 @@
         -moz-column-count: 3;
         column-count: 3;
     }
+    .font-14-pt {
+        font-size: 14px;
+    }
+    .font-16-pt {
+        font-size: 16px;
+    }
+    .font-18-pt {
+        font-size: 18px;
+    }
+    .font-20-pt {
+        font-size: 20px;
+    }
+    .font-24-pt {
+        font-size: 24px;
+    }
+    .font-30-pt {
+        font-size: 30px;
+    }
+    .font-36-pt {
+        font-size: 36px;
+    }
 }
 /*** Horizontal Orientation ***/
 @media (orientation: landscape) {
@@ -1370,5 +1391,27 @@
         -webkit-column-count: 5;
         -moz-column-count: 5;
         column-count: 5;
+    }
+    
+    .font-16-ls {
+        font-size: 16px;
+    }
+    .font-18-ls {
+        font-size: 18px;
+    }
+    .font-20-ls {
+        font-size: 20px;
+    }
+    .font-24-ls {
+        font-size: 24px;
+    }
+    .font-30-ls {
+        font-size: 30px;
+    }
+    .font-36-ls {
+        font-size: 36px;
+    }
+    .font-42-ls {
+        font-size: 36px;
     }
 }

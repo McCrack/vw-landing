@@ -23,9 +23,94 @@ body {
 #cover {
     min-height: 80vh;
 }
+#order-form {
+    img{
+        line-height: 380px;
+        border-radius: 30px;
+    }
+    form {
+        border-radius: 30px;
+        padding: 0 3vw;
+        box-sizing: border-box;
+    }
+}
 .advantages {
     min-height: 80vh;
 }
+.stages {
+    background-image: linear-gradient(to bottom, #dfdfdf, #ffffff, #ffffff, #dadada);
+    & > div {
+        min-height: 80vh;
+        counter-reset: stages;
+        .stage {
+            margin: 20px;
+            padding: 28px;
+            width: 280px;
+            overflow: hidden;
+            line-height: 1.5;
+            min-height: 220px;
+            border-radius: 30px;
+            vertical-align: top;
+            display: inline-block;
+            background-color: #e5e5e5;
+            position: relative;
+            z-index: 1;
+            text-align: right;
+            counter-increment: stages;
+            &::after {
+                content: "0" counter(stages);
+                color: white;
+                left: -18px;
+                bottom: -16px;
+                z-index: -1;
+                line-height: .8;
+                font-size: 180px;
+                position: absolute;
+                font-weight: @font-bold;
+            }
+        }
+    }
+}
+#reviews {
+    min-height: 90vh;
+    white-space: nowrap;
+    .review {
+        display: inline-block;
+        vertical-align: middle;
+        & > div {
+            min-height: 420px;
+            border-radius: 30px;
+            white-space: normal;
+            background-color: #eeeeee;
+            transition: all .5s;
+        }
+        &:not(.active) > div {
+            filter: blur(5px);
+            transform: scale(.9);
+            & > p {
+                overflow: hidden;
+                max-height: 180px;
+            }
+        }
+        img {
+            width: 128px;
+            height: 128px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        & > div {
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    }
+    button {
+        border: none;
+        cursor: pointer;
+        font-size: 38px;
+        background-color: transparent;
+    }
+}
+
 /*~~~~~* COMPONENTS *~~~~~*/
 
 
@@ -66,17 +151,6 @@ body {
 
 /*~~~~* FORM CONTROLS *~~~~*/
 
-.order-form {
-    img{
-        line-height: 380px;
-        border-radius: 30px;
-    }
-    form {
-        border-radius: 30px;
-        padding: 0 3vw;
-        box-sizing: border-box;
-    }
-}
 .field {
     height: 40px;
     margin: 10px 0;
