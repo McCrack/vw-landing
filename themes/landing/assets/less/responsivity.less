@@ -36,7 +36,7 @@
         }
     }
     #reviews {
-        .review {
+        .card {
             & > div {
                 margin: 10px;
                 padding: 20px;
@@ -79,19 +79,19 @@
     }
     #reviews {
         padding: 50px 0;
-        .review {
-            width: 400px;
+        .card {
             padding: 20px;
             & > div {
                 padding: 30px;
             }
         }
         button {
-            left: 50%;
             &:nth-child(1) {
+                left: 50%;
                 transform: translateX(-240px);
             }
             &:nth-child(2) {
+                right: 50%;
                 transform: translateX(240px);
             }
         }
@@ -103,15 +103,11 @@
     .bottom-image {
         height: 280px;
     }
-    
 }
 
 @media (min-width: 424px) AND (max-width: 824px) {
     .bottom-image {
         height: 340px;
-        img {
-            max-width: 460px;
-        }
     }
     
 }
@@ -119,17 +115,12 @@
 @media (min-width: 825px) AND (max-width: 1244px) {
     .bottom-image {
         height: 420px;
-        img {
-            
-        }
     }
     
 }
 @media (min-width: 1245px) {
     .bottom-image {
         height: 320px;
-        img {
-            
-        }
     }
 }
+

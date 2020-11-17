@@ -5,15 +5,48 @@ description = "Reviews Screen"
     
         <p class="font-bold font-36 text-center primary-txt m-0">Отзывы</p>
         
-        <div class="overflow-auto container">
+        <div class="slider overflow-hidden container font-none">
         
-            
-            <div class="review">
-                
+        
+            <div class="card text-center">
+                <div>
+                    <img src="{{ 'assets/images/reviews/oleg.jpg'|theme }}" alt="Олег">
+                    <div>
+                        <p class="font-extrabold font-24 m-5">Олег</p>
+                        <p class="font-bold font-18 m-0">Владелец кафе в Бристоле</p>
+                    </div>
+                    <p class="text-left font-16 py-10">
+                    С началом карантина мои доходы значительно снизились, пустеть начали даже 
+                    банковские накопления. Я начал искать источник дополнительных инвестиций, 
+                    чтобы не пришлось закрывать кафе. В итоге остановился на этом проекте, 
+                    потому что она давал возможность участия любому жителю ЕС. Теперь я понимаю, 
+                    что это самое большое везение в моей жизни. Особых усилий от меня не 
+                    потребовалось, я закрыл все свои вопросы по аренде и бизнес процветает. 
+                    В общем всем рекомендую воспользоваться, пока это всё еще в открытом доступе
+                    </p>
+                </div>
             </div>
             
+            <div class="card text-center">
+                <div>
+                    <img src="{{ 'assets/images/reviews/victor.jpg'|theme }}" alt="Виктор">
+                    <div>
+                        <p class="font-extrabold font-24 m-5">Виктор</p>
+                        <p class="font-bold font-18 m-0">Работает строителем в Кёльне</p>
+                    </div>
+                    <p class="text-left font-16 py-10">
+                    До проекта я большую часть дня на работе был. После смены сил не оставалось 
+                    даже с семьей пообщаться. А здесь через неделю я 6300 евро заработал. Просто 
+                    в шоке был. Работу не брошу, потому что не привычно мне без дела сидеть. 
+                    Но теперь я же могу куда меньше дней брать себе. Спасибо «ФольцИнвест» за все, 
+                    вернули веру в лучшее!
+                    </p>
+                </div>
+            </div>
             
-            <div class="review text-center">
+            <!-- [][] -->
+            
+            <div class="card active text-center">
                 <div>
                     <img src="{{ 'assets/images/reviews/elena.jpg'|theme }}" alt="Елена">
                     <div>
@@ -30,7 +63,7 @@ description = "Reviews Screen"
                 </div>
             </div>
         
-            <div class="review text-center">
+            <div class="card text-center">
                 <div>
                     <img src="{{ 'assets/images/reviews/irina.jpg'|theme }}" alt="Ирина">
                     <div>
@@ -49,7 +82,7 @@ description = "Reviews Screen"
                 </div>
             </div>
             
-            <div class="review text-center">
+            <div class="card text-center">
                 <div>
                     <img src="{{ 'assets/images/reviews/igor.png'|theme }}" alt="Игорь и Алена Михайловы">
                     <div>
@@ -70,7 +103,7 @@ description = "Reviews Screen"
                 </div>
             </div>
         
-            <div class="review active text-center">
+            <div class="card text-center">
                 <div>
                     <img src="{{ 'assets/images/reviews/maxim.jpg'|theme }}" alt="Максим">
                     <div>
@@ -89,7 +122,7 @@ description = "Reviews Screen"
                 </div>
             </div>
         
-            <div class="review text-center">
+            <div class="card text-center">
                 <div>
                     <img src="{{ 'assets/images/reviews/oleg.jpg'|theme }}" alt="Олег">
                     <div>
@@ -108,7 +141,7 @@ description = "Reviews Screen"
                 </div>
             </div>
         
-            <div class="review text-center">
+            <div class="card text-center">
                 <div>
                     <img src="{{ 'assets/images/reviews/victor.jpg'|theme }}" alt="Виктор">
                     <div>
@@ -125,9 +158,44 @@ description = "Reviews Screen"
                 </div>
             </div>
             
-            <div class="review">
-                
+            <!-- [][] -->
+            
+            <div class="card text-center">
+                <div>
+                    <img src="{{ 'assets/images/reviews/elena.jpg'|theme }}" alt="Елена">
+                    <div>
+                        <p class="font-extrabold font-24 m-5">Елена</p>
+                        <p class="font-bold font-18 m-0">Работала продавцом во Франкфурте</p>
+                    </div>
+                    <p class="text-left font-16 py-10">
+                    Когда заработала первые 2500 евро за три дня, просто не могла поверить.
+                    У меня сразу все стало получаться, я расплатилась с кредитами, и купила
+                    наконец машину. И это все через месяц! Я всем рекомендую попробовать.
+                    Моя прошла работа потеряла смысл для меня, я просто занимаюсь домом и садом,
+                    на которые раньше так не хватало времени.
+                    </p>
+                </div>
             </div>
+            
+            <div class="card text-center">
+                <div>
+                    <img src="{{ 'assets/images/reviews/irina.jpg'|theme }}" alt="Ирина">
+                    <div>
+                        <p class="font-extrabold font-24 m-5">Ирина</p>
+                        <p class="font-bold font-18 m-0">Домработница из Бельгии</p>
+                    </div>
+                    <p class="text-left font-16 py-10">
+                    Я сюда приехала на заработки, потому что дома невозможно было уже. В принципе 
+                    все хорошо шло, но, когда начался карантин, все поменялось, домой пришлось 
+                    возвращаться. Повезло, что работодатели хорошие попались и рассказали про 
+                    «ФольцИнвест». Я перед отъездом успела зарегистрироваться, а когда к себе 
+                    вернулась, то зарабатывала уже по 2000-3000 тысячи евро в неделю - больше, 
+                    чем в Германии! От счастья просто руки тряслись. До сих пор благодарна и 
+                    работодателям и «ФольцИнвест»!
+                    </p>
+                </div>
+            </div>
+            
         </div>
     </div>
     <div>
@@ -136,18 +204,64 @@ description = "Reviews Screen"
     </div>
     <script>
     ((container) => {
-        let reviews = container.querySelectorAll(".review");
+        let timeout;
+        let current = 0;
+        let slider = container.querySelector(".slider");
+        let reviews = slider.querySelectorAll(".card");
+        let activeCard = slider.querySelector(".active");
+        let cardWidth = activeCard.offsetWidth;
+        let offset = (slider.offsetWidth > cardWidth)
+            ? cardWidth - ((slider.offsetWidth - cardWidth) / 2) + cardWidth
+            : cardWidth * 2;
+        
+        slider.scrollLeft = offset;
+        
+        window.onresize = () => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                let tmp = slider.scrollLeft - offset;
+                cardWidth = activeCard.offsetWidth;
+                offset = (slider.offsetWidth > cardWidth)
+                    ? cardWidth - ((slider.offsetWidth - cardWidth) / 2) + cardWidth
+                    : 0;
+                slider.scrollLeft = tmp + offset;
+            }, 250);
+        }
+        
+        let showReview = (i) => {
+            if (i > 1) {
+                if (i > reviews.length - 3) {
+                    resetSlider(0);
+                    reviews[2].classList.toggle("active", true);
+                    slider.scrollLeft = cardWidth;
+                } else {
+                    slider.scrollLeft = ((i - 2) * cardWidth) + offset;
+                    reviews[i].classList.toggle("active", true);
+                }
+            } else {
+                resetSlider(slider.scrollWidth - slider.offsetWidth);
+                reviews[reviews.length - 3].classList.toggle("active", true);
+                slider.scrollLeft -= cardWidth;
+            }
+        }
+        let resetSlider = (offset) => {
+            slider.style.scrollBehavior = "auto";
+            slider.scrollLeft = offset;
+            slider.style.scrollBehavior = "smooth";
+        }
+        
         container.querySelectorAll("button").forEach(btn => {
             btn.onclick = event => {
-                alert(btn.dataset.dir)
+                slider.querySelector(".active").classList.toggle("active", false);
+                let i = ((slider.scrollLeft / cardWidth) >> 0) + 1;
+                console.log(i)
+                showReview(i + parseInt(event.target.dataset.dir));
             }
         });
-        reviews.forEach(review => {
-            review.onclick = event => {
-                reviews.forEach(rew => {
-                    rew.classList.toggle("active",  false);
-                });
-                review.classList.toggle("active", true);
+        reviews.forEach((card, i) => {
+            card.onclick = event => {
+                slider.querySelector(".active").classList.toggle("active", false);
+                showReview(i);
             }
         })
     })(document.currentScript.parentNode)

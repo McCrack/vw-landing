@@ -74,35 +74,39 @@ body {
 #reviews {
     min-height: 90vh;
     white-space: nowrap;
-    .review {
-        display: inline-block;
-        vertical-align: middle;
-        & > div {
-            min-height: 420px;
-            border-radius: 30px;
-            white-space: normal;
-            background-color: #eeeeee;
-            transition: all .5s;
-        }
-        &:not(.active) > div {
-            filter: blur(5px);
-            transform: scale(.9);
-            & > p {
-                overflow: hidden;
-                max-height: 180px;
+    .slider {
+        scroll-behavior: smooth;
+    
+        .card {
+            width: 100%;
+            max-width: 400px;
+            display: inline-block;
+            vertical-align: middle;
+            & > div {
+                min-height: 420px;
+                border-radius: 30px;
+                white-space: normal;
+                background-color: #eeeeee;
+                transition: all .5s ease-in;
+            }
+            &:not(.active) > div {
+                cursor: pointer;
+                filter: blur(5px);
+                transform: scale(.75);
+            }
+            img {
+                width: 128px;
+                height: 128px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            & > div {
+                margin: 0 auto;
+                padding-top: 20px;
             }
         }
-        img {
-            width: 128px;
-            height: 128px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        & > div {
-            margin: 0 auto;
-            padding-top: 20px;
-        }
     }
+    
     button {
         border: none;
         cursor: pointer;
